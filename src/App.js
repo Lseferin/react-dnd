@@ -37,7 +37,6 @@ function App() {
       text: 'PROFIT',
     },
   ])
-
   const moveCard = useCallback((dragIndex, hoverIndex) => {
     // @TODO
     setCards((prevCards) =>
@@ -75,6 +74,7 @@ function App() {
       {/* percorre a posição dos cards */}
     </DndProvider>
     </>
+    // cada vez que o card movimentar, o button post clicado serve para alterar o state para a nova ordenação
   )
 }
 
